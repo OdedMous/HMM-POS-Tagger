@@ -53,8 +53,6 @@ In the context of POS tagging, this model makes two assumptions:
 1. The probability to genertate a word depends only in the current chosen tag. This probability is called "emmision probability".
 2. The probability to genertate the next tag depends only in the n last chosen tags (this assumption is    called "Markov assumption", and in this program we chose n=2, aka bigram HMM). This probability is    called "transition probability" <br /> 
 
-More details on HMM can be found in the excellent book "Speech and Language Processing", by Dan Jurafsky and James H. Martin.
-
 **Unkown words:**
 Words that doesn't appear in the training set but does appear in the test set. Hence it's harder to  predict thier tag since we relay heavly on the apperance of the words in the training set.
 
@@ -66,6 +64,8 @@ Since our models depends on counting apperance of pairs of words (because we use
 
 **The Viterbi algorithm**
 A dynamic programming algorithm for finding the most likely sequence of hidden states (=tags in our case). Its advantage is its run time: if the number of optional tags is K and the length of the words sequence is N, than the **inference** (prediction) phase (calculating the probability for each sequance of tags, and return the most probability one) of a **brute-force method** takes O(K^N). However, viterbi algorithem takes O(N * K^m) for a m-gram HMM model.
+
+More details on HMM can be found in the excellent book "Speech and Language Processing", by Dan Jurafsky and James H. Martin.
 
 ## **Some implementation details**
 
@@ -83,7 +83,7 @@ My main ideas was to map a word by:
 - some more little spelling things, such as if the word has capital first letter or if the word contains $. 
 
 Further thoughts one should check:
-- combaine suffix/prefix of a word with its capital first letter.
+- combaine suffix/prefix with other spelling properties of the word.
 - consider more carefully special symbols like '.' and '-'.
 - consider more carfully numbers ("4th" and "forth" may get the same pseudo-word, but "4-years" not).
 - and more...
