@@ -74,13 +74,13 @@ Two advantages obtained by that:
 - Run time - in a one-time single pass on the data we extract usful information that makes calculations run faster later in the program. 
 - Readability - we can access those structures from anywhere in the program, instead of reconstruct them over and over agian. <br/>
 
-
 **Pseudo-words**: <br/>
 We map all low-frequency words from training set, and all unknown words (from test set) to pseudo-words.
 My main ideas was to map a word by:
 - its suffix/prefix.
 - if it contains a number
-- some more little spelling things, such as if the word has capital first letter or if the word contains $. <br/>
+- some more little spelling things, such as if the word has capital first letter or if the word contains $. 
+
 Further thoughts one should check:
 - combaine suffix/prefix of a word with its capital first letter.
 - consider more carefully special symbols like '.' and '-'.
