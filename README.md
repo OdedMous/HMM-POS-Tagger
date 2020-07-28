@@ -19,11 +19,11 @@ an HMM POS (Part of Speech) tagger:
 Brown corpus - news category
 
 ## **Structure and Usage**
-**code**: main.py - extracts the data and runs the program.
-          models.py - implementation of baseline and HMM models.
-	  pseudowords.py - contains function that maps words to their pseudowords.
+**code**: main.py - extracts the data and runs the program. <br/>
+          models.py - implementation of baseline and HMM models.  <br/>
+	  pseudowords.py - contains function that maps words to their pseudowords. <br/>
 	  word_counting.py - contains data structures that stores word and tag counts
-                             for the text.
+                             for the text. <br/>
 
 **Usage:**
 python main.py
@@ -32,7 +32,7 @@ python main.py
 An Excel file is saved in the current directory.
 It contains the errors results and a chart which visualizes it.
    
-**Example results:**
+**Example results:** <br/>
 ![results example](../master/images/res.png)
 
  Note that the results might change a little in each run since the program use viterbi algorithm which
