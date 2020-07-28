@@ -51,7 +51,8 @@ A very simple modle which designed to provide a simple solution for the task. If
 Hidden Markov Model is a probabilistic sequence classifier, and it's also a generative model.
 In the context of POS tagging, this model makes two assumptions: 
 1. The probability to genertate a word depends only in the current chosen tag. This probability is called "emmision probability".
-2. The probability to genertate the next tag depends only in the n last chosen tags (this assumption is    called "Markov assumption", and in this program we chose n=2, aka bigram HMM). This probability is    called "transition probability" <br />                  
+2. The probability to genertate the next tag depends only in the n last chosen tags (this assumption is    called "Markov assumption", and in this program we chose n=2, aka bigram HMM). This probability is    called "transition probability" <br /> 
+
 More details on HMM can be found in the excellent book "Speech and Language Processing", by Dan Jurafsky and James H. Martin.
 
 **Unkown words:**
