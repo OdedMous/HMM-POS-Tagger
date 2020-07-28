@@ -68,23 +68,22 @@ A dynamic programming algorithm for finding the most likely sequence of hidden s
 
 ## **Some implementation details**
 
-* Global data structures: they were created in order to extract
- important information (such as counts of occurrence of tags in the training set).
-  Two advantages obtained by that:
-  1. Shorter run time - in a one-time single pass on the data we extract usful information 
-     that help us makes things faster later in the program. 
-  2. Readability - we can access those structures from anywhere in the program, instead of reconstruct
-	 them over and over agian. 
-  Disadvantages:
-  1. Memorey
+**Object "Counts" from word_counting.py:**
+It contains data structures that stores important information about the text such as word and tag counts for the text. 
+Two advantages obtained by that:
+1. Run time - in a one-time single pass on the data we extract usful information that makes calculations run faster later in the program. 
+2. Readability - we can access those structures from anywhere in the program, instead of reconstruct them over and over agian. 
+Disadvantages:
+1. Memorey
 
-* Pseudo-words: my main ideas was to map a word by:
-                - its suffix/prefix.
-				-  if it contains a number
-                - and some more little spelling things.
-				Furtter thinking one should check:
-				- combaine suffix/prefix of word with its capital first letter.
-				- consider more carefully special symbols like '.' and '-'.
-				- consider more carfully numbers ("4th" and "forth" may get the same pseudo-word,
-  				   but "4-years" not).
-				- and more..
+* **Pseudo-words**: 
+We map all low-frequency words from training set, and all unknown words (from test set) to pseudo-words.
+My main ideas was to map a word by:
+- its suffix/prefix.
+- if it contains a number
+- some more little spelling things, such as if the word has capital first letter or if the word contains $.
+Furtter thinking one should check:
+- combaine suffix/prefix of a word with its capital first letter.
+- consider more carefully special symbols like '.' and '-'.
+- consider more carfully numbers ("4th" and "forth" may get the same pseudo-word, but "4-years" not).
+- and more...
