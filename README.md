@@ -77,7 +77,7 @@ An advantage obtained by that: Run time - in a one-time single pass on the data 
 We map all low-frequency words from training set, and all unknown words (from test set) to pseudo-words.
 My main ideas was to map a word by:
 - its suffix/prefix. For example: "ownership" ---> "_SHIP", "disadvantage" ---> "DIS_AGE".    
-The assumption here is that words that share suffix/prefix may also share POS tag.
+The assumption here is that words that share same suffix/prefix may also share same POS tag.
 - if it contains a number
 - some more little spelling things, such as if the word has capital first letter or if the word contains the symbol '$'. 
 
