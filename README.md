@@ -78,7 +78,7 @@ We map all low-frequency words from training set, and all unknown words (from te
 My main ideas was to map a word by:
 - its suffix/prefix.
 - if it contains a number
-- some more little spelling things, such as if the word has capital first letter or if the word contains $. 
+- some more little spelling things, such as if the word has capital first letter or if the word contains the symbol '$'. 
 
 Further thoughts one should check:
 - combaine suffix/prefix with other spelling properties of the word.
