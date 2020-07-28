@@ -19,11 +19,11 @@ an HMM POS (Part of Speech) tagger:
 Brown corpus - news category
 
 ## **Structure and Usage**
-**code**: main.py - extracts the data and runs the program. <br/>
-          models.py - implementation of baseline and HMM models.  <br/>
-	  pseudowords.py - contains function that maps words to their pseudowords. <br/>
-	  word_counting.py - contains data structures that stores word and tag counts
-                             for the text. <br/>
+**code**: 
+*main.py* - extracts the data and runs the program. <br/>
+*models.py* - implementation of baseline and HMM models.  <br/>
+*pseudowords.py* - contains function that maps words to their pseudowords. <br/>
+*word_counting.py* - contains data structures that stores word and tag counts for the text. 
 
 **Usage:**
 python main.py
