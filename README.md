@@ -80,7 +80,8 @@ We map all low-frequency words from training set, and all unknown words (from te
 My main ideas was to map a word by:
 - its suffix/prefix.
 - if it contains a number
-- some more little spelling things, such as if the word has capital first letter or if the word contains $.                        Further thoughts one should check:
+- some more little spelling things, such as if the word has capital first letter or if the word contains $. <br/>
+Further thoughts one should check:
 - combaine suffix/prefix of a word with its capital first letter.
 - consider more carefully special symbols like '.' and '-'.
 - consider more carfully numbers ("4th" and "forth" may get the same pseudo-word, but "4-years" not).
