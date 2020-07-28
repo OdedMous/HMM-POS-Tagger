@@ -18,8 +18,11 @@ an HMM POS (Part of Speech) tagger:
 **Dataset for train and test sets:**
 Brown corpus - news category
 
+## **Structure and Usage**
+code
+
 **Usage:**
-python HMM_tagger
+python main.py
 
 **Output:**
 An Excel file is saved in the current directory.
