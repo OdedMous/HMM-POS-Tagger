@@ -68,15 +68,15 @@ A dynamic programming algorithm for finding the most likely sequence of hidden s
 
 ## **Some implementation details**
 
-**Object "Counts" from word_counting.py:**
+**Object "Counts" from word_counting.py:** <br/>
 It contains data structures that stores important information about the text such as word and tag counts for the text. 
 Two advantages obtained by that:
 1. Run time - in a one-time single pass on the data we extract usful information that makes calculations run faster later in the program. 
-2. Readability - we can access those structures from anywhere in the program, instead of reconstruct them over and over agian. 
+2. Readability - we can access those structures from anywhere in the program, instead of reconstruct them over and over agian. <br/>
 Disadvantages:
 1. Memorey
 
-* **Pseudo-words**: 
+**Pseudo-words**: <br/>
 We map all low-frequency words from training set, and all unknown words (from test set) to pseudo-words.
 My main ideas was to map a word by:
 - its suffix/prefix.
