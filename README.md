@@ -71,9 +71,7 @@ More details on HMM can be found in the excellent book "Speech and Language Proc
 
 **Object "Counts" from word_counting.py:** <br/>
 It contains data structures that stores important information about the text such as word and tag counts for the text. 
-Two advantages obtained by that:
-- Run time - in a one-time single pass on the data we extract usful information that makes calculations run faster later in the program. 
-- Readability - we can access those structures from anywhere in the program, instead of reconstruct them over and over agian. <br/>
+An advantage obtained by that: Run time - in a one-time single pass on the data we extract usful information that makes calculations run faster later in the program. 
 
 **Pseudo-words**: <br/>
 We map all low-frequency words from training set, and all unknown words (from test set) to pseudo-words.
