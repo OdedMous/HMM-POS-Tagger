@@ -1,5 +1,7 @@
 # HMM POS Tagger
 
+![pic](../master/images/postagging.png)
+
 ## **Goal**
 This program implements and compares several versions of
 an HMM POS (Part of Speech) tagger:
