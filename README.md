@@ -1,6 +1,6 @@
 # HMM POS Tagger
 
-![pic](../master/images/postagging.jpg)
+![pic](../master/images/postagging.png)
 
 ## **Goal**
 This program implements and compares several versions of
